@@ -51,14 +51,14 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  movie.find(attributes)
+  
 end
 
 def can_find_using_where_clause_and_be_sorted
   Movie.where("release_date > 2002").order(release_date: :desc)
   # For this test return all movies released after 2002 and ordered by
   # release date descending
-  __
+  
 end
 
 def can_be_found_updated_and_saved
